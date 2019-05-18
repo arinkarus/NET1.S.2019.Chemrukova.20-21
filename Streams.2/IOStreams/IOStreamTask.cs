@@ -28,7 +28,15 @@ namespace IOStreams
             throw new NotImplementedException();
         }
 
-		public static string CalculateHash(this Stream stream, string hashAlgorithmName)
+        /// <summary>
+        /// Calculates hash of stream using specified algorithm.
+        /// </summary>
+        /// <param name="stream">Source stream</param>
+        /// <param name="hashAlgorithmName">
+        /// Hash algorithm ("MD5","SHA1","SHA256" and other supported by .NET).
+        /// </param>
+        /// <returns></returns>
+        public static string CalculateHash(this Stream stream, string hashAlgorithmName)
 		{
             var hashAlgorithm = HashAlgorithm.Create(hashAlgorithmName);
             if (hashAlgorithm == null)
