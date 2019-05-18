@@ -87,7 +87,6 @@ namespace IOStreams
         private static XDocument LoadToXml(this Package package, string xmlPath)
         {
             var uri = new Uri(xmlPath, UriKind.Relative);
-
             using (var stream = package.GetPart(uri).GetStream(FileMode.Open, FileAccess.Read))
             {
                 return XDocument.Load(stream);
