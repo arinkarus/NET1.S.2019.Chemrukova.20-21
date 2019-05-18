@@ -13,16 +13,6 @@ namespace IOStreams
 {
 	public static class IOStreamTask
 	{
-        /// <summary>
-        /// Parses Resourses\Planets.xlsx file and returns the planet data: 
-        ///   Jupiter     69911.00
-        ///   Saturn      58232.00
-        ///   Uranus      25362.00
-        ///    ...
-        /// See Resourses\Planets.xlsx for details
-        /// </summary>
-        /// <param name="xlsxFileName">Source file name.</param>
-        /// <returns>Sequence of PlanetInfo</returns>
         public static IEnumerable<PlanetInfo> ReadPlanetInfoFromXlsx(string xlsxFileName)
         {
             throw new NotImplementedException();
@@ -37,7 +27,7 @@ namespace IOStreams
         /// </param>
         /// <returns></returns>
         public static string CalculateHash(this Stream stream, string hashAlgorithmName)
-		{
+        {
             var hashAlgorithm = HashAlgorithm.Create(hashAlgorithmName);
             if (hashAlgorithm == null)
             {
