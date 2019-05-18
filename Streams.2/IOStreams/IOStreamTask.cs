@@ -46,15 +46,15 @@ namespace IOStreams
             var hash = hashAlgorithm.ComputeHash(stream);
             return string.Join(string.Empty, hashAlgorithm.ComputeHash(stream).Select(x => x.ToString("X2").ToUpper()));
         }
-    
-		/// <summary>
-		/// Returns decompressed stream from file. 
-		/// </summary>
-		/// <param name="fileName">Source file.</param>
-		/// <param name="method">Method used for compression (none, deflate, gzip).</param>
-		/// <returns>output stream</returns>
-		public static Stream DecompressStream(string fileName, DecompressionMethods method)
-		{
+
+        /// <summary>
+        /// Returns decompressed stream from file. 
+        /// </summary>
+        /// <param name="fileName">Source file.</param>
+        /// <param name="method">Method used for compression (none, deflate, gzip).</param>
+        /// <returns>output stream</returns>
+        public static Stream DecompressStream(string fileName, DecompressionMethods method)
+        {
             var stream = File.Create(fileName);
             switch (method)
             {
@@ -67,22 +67,22 @@ namespace IOStreams
                 default:
                     throw new ArgumentException("There is no decompression method!");
             }
-		}
+        }
 
-		/// <summary>
-		/// Reads file content encoded with non Unicode encoding
-		/// </summary>
-		/// <param name="fileName">Source file name</param>
-		/// <param name="encoding">Encoding name</param>
-		/// <returns>Unicoded file content</returns>
-		public static string ReadEncodedText(string fileName, string encoding)
-		{
+        /// <summary>
+        /// Reads file content encoded with non Unicode encoding
+        /// </summary>
+        /// <param name="fileName">Source file name</param>
+        /// <param name="encoding">Encoding name</param>
+        /// <returns>Unicoded file content</returns>
+        public static string ReadEncodedText(string fileName, string encoding)
+        {
             //return File.ReadAllText(fileName, Encoding.GetEncoding(encoding));
             using (var streamReader = new StreamReader(fileName, Encoding.GetEncoding(encoding)))
             {
                 return streamReader.ReadToEnd();
             }
-		}
+        }
 
         private static XDocument LoadToXml(this Package package, string xmlPath)
         {
