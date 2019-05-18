@@ -23,3 +23,8 @@
 - Для выполнения задания использовать следующий [проект Streams.zip](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/tree/master/Day%2020%20-%2001.05.2019).
 
 2. **(deadline - )** Реализовать функциональность, обозначенную в методах класса *IOStreamTask* проекта [Streams.2.zip](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/tree/master/Day%2020%20-%2001.05.2019). Проверить работу реализованной функциональности для предлагаемых в проекте тестов.
+
+## Реализация (Done)
+1. - [Решение](https://github.com/arinkarus/NET1.S.2019.Chemrukova.20-21/blob/master/Streams/StreamsDemo/StreamsExtension.cs)
+   - [Консоль](https://github.com/arinkarus/NET1.S.2019.Chemrukova.20-21/blob/master/Streams/ConsoleClient/Program.cs)
+2. - [Решение](https://github.com/arinkarus/NET1.S.2019.Chemrukova.20-21/blob/master/Streams.2/IOStreams/IOStreamTask.cs)
