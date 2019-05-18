@@ -25,14 +25,6 @@ namespace IOStreams
         /// <returns>Sequence of PlanetInfo</returns>
         public static IEnumerable<PlanetInfo> ReadPlanetInfoFromXlsx(string xlsxFileName)
         {
-            // TODO : Implement ReadPlanetInfoFromXlsx method using System.IO.Packaging + Linq-2-Xml
-
-            // HINT : Please be as simple & clear as possible.
-            //        No complex and common use cases, just this specified file.
-            //        Required data are stored in Planets.xlsx archive in 2 files:
-            //         /xl/sharedStrings.xml      - dictionary of all string values
-            //         /xl/worksheets/sheet1.xml  - main worksheet
-
             throw new NotImplementedException();
         }
 
