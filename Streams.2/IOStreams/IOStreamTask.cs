@@ -37,7 +37,7 @@ namespace IOStreams
         /// </param>
         /// <returns></returns>
         public static string CalculateHash(this Stream stream, string hashAlgorithmName)
-		{
+        {
             var hashAlgorithm = HashAlgorithm.Create(hashAlgorithmName);
             if (hashAlgorithm == null)
             {
