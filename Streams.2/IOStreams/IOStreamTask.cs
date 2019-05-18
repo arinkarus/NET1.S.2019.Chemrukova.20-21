@@ -41,7 +41,7 @@ namespace IOStreams
 		/// </summary>
 		/// <param name="stream">Source stream</param>
 		/// <param name="hashAlgorithmName">
-		///     Hash algorithm ("MD5","SHA1","SHA256" and other supported by .NET).
+		/// Hash algorithm ("MD5","SHA1","SHA256" and other supported by .NET).
 		/// </param>
 		/// <returns></returns>
 		public static string CalculateHash(this Stream stream, string hashAlgorithmName)

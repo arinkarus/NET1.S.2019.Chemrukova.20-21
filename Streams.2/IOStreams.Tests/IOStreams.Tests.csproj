@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Planets.xlsx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Resources\Planets.xlsx.deflate">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
